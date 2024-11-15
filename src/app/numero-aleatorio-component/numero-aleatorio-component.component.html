@@ -1,0 +1,6 @@
+<input type="number" [(ngModel)]="numero" placeholder="Indica la cantidad de numeros que quieres:" >
+<button (click)="numeros()">Mostrar</button>
+<button (click)="elimiarLista()">Vaciar lista</button>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let nm of lista">{{ nm }}</li>
+</ul>

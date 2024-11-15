@@ -1,0 +1,12 @@
+<div>
+  <button (click)="abrirVentana()">Abrir nueva ventana</button>
+  <button (click)="cerrarVentana()" [disabled]="!nuevaVentana">Cerrar Ventana</button>
+</div>
+
+<div *ngIf="nuevaVentana">
+  <p>Mover la ventana:</p>
+  <button (click)="moverVentana('arriba')">Arriba</button>
+  <button (click)="moverVentana('abajo')">Abajo</button>
+  <button (click)="moverVentana('izquierda')">Izquierda</button>
+  <button (click)="moverVentana('derecha')">Derecha</button>
+</div>

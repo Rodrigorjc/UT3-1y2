@@ -1,0 +1,8 @@
+<div>
+  <button (click)="abrirVentana()">Abrir nueva ventana</button>
+  <button (click)="cerrarVentana()">Cerrar ventana</button>
+</div>
+
+<div *ngIf="nuevaventana">
+  <p>Resolución de la ventana: {{ ancho }} x {{ alto }} px</p>
+</div>

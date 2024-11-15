@@ -1,0 +1,9 @@
+<div *ngIf="nombreUsuario; else pedirNombre">
+  <p>¡Hola, {{ nombreUsuario }}! Bienvenido de nuevo.</p>
+</div>
+
+<ng-template #pedirNombre>
+  <p>Por favor, ingresa tu nombre:</p>
+  <input #inputNombre type="text" placeholder="Nombre">
+  <button (click)="establecerNombre(inputNombre.value)">Guardar</button>
+</ng-template>
